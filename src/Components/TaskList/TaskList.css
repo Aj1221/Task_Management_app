@@ -1,0 +1,140 @@
+.task-list {
+  max-height: 400px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.task {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.task h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.task p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.task input[type="text"],
+.task textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task button {
+  padding: 10px 20px;
+  background-color: #3494e6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task button:hover {
+  background-color: #2978b5;
+}
+
+.task-search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  background-color: white;
+  width: 79%;
+  margin: 24px;
+  padding: 10px;
+  margin-left: 151px;
+  border-radius: 10px;
+}
+
+.task-search input {
+  width: 48%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-search label {
+  margin-right: 5px;
+}
+
+.task-filter {
+  display: flex;
+}
+
+.task-filter label {
+  white-space: nowrap;
+  margin-top: 9px;
+  margin-right: 5px;
+}
+
+.task-filter select {
+  width: 48%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-list {
+  margin-top: 16px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .task-list {
+    width: 95%; 
+    margin: 0 auto;
+  }
+
+  .task {
+    padding: 15px;
+  }
+
+  .task input[type="text"],
+  .task textarea {
+    padding: 8px; 
+  }
+
+  .task button {
+    padding: 8px 16px;
+  }
+
+  .task-search-filter {
+    flex-direction: column;
+    align-items: stretch; 
+    margin: 27px auto;
+  }
+
+  .task-search input,
+  .task-filter select {
+    width: 92%; 
+    margin: 5px 0; 
+  }
+  
+  .task-search label,
+  .task-filter label {
+    margin-right: 0; 
+  }
+
+  .task-list {
+    margin-top: 12px; 
+  }
+}

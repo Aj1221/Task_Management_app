@@ -1,0 +1,81 @@
+
+
+  .task-form {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 77%; 
+    margin: 0 auto; 
+    background: linear-gradient(45deg, #3494e6, #aaffaa, #e0e0e0, #aaffaa, #3494e6);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .task-form input[type="text"]{
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .task-form input[type="date"] {
+    width: 17%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+.task-form select{
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+  .task-form button {
+    padding: 10px 20px;
+    background-color: #3494e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .task-form button:hover {
+    background-color: #2978b5;
+  }
+  
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .task-form {
+      padding: 10px;
+    }
+    
+    .task-form input[type="text"],
+    .task-form input[type="date"] {
+      padding: 8px;
+    }
+    
+    .task-form button {
+      padding: 8px 16px;
+    }
+  }
+  
